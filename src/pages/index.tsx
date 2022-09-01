@@ -6,11 +6,13 @@ export default function Home() {
   return (
     <div className="news-festival-container">
       <div className="container">
-        <div className="flex">
+        <div className="md:flex">
           <div className="flex-1">
             <div>
-              <h1 className="font-bold text-4xl rainbow-border">Festival de Novidades</h1>
-              <p className="font-medium text-base pt-4 pb-6">
+              <h1 className="font-bold text-4xl rainbow-border xs:text-center">
+                Festival de Novidades
+              </h1>
+              <p className="font-medium text-base pt-4 pb-6 xs:text-center">
                 Chegou a maior inovação da nossa história no preparo para carreiras públicas. Pode
                 acreditar!
               </p>
@@ -21,7 +23,7 @@ export default function Home() {
       </div>
       <section className="mystery-box pt-4 pb-6">
         <div className="container">
-          <div className="flex">
+          <div className="md:flex">
             <div>
               <div>
                 <h1 className="font-medium text-4xl">Sua aprovação pode estar nesta caixa!</h1>
@@ -89,7 +91,7 @@ export default function Home() {
           <h1 className="mb-2">Outros planos com descontos imperdíveis</h1>
           <p className="text-gray-400 font-medium text-lg">Ofertas exclusivas para o 1º lote</p>
         </div>
-        <div className="price-wrapper flex">
+        <div className="price-wrapper md:flex">
           <div className="flex-1 price-wrapper-left">
             <div className="px-9 pb-9 pt-6">
               <div>
@@ -257,7 +259,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className="pt-9 mb-16">
+      <footer className="pt-9 pb-16">
         <div className="container">
           <h3>
             Divulgue com seus amigos e não deixe eles perderem o MAIOR desconto da história do
