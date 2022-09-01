@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 // import 'bootstrap/dist/css/bootstrap.css'
-
+import Image from 'next/image'
 export default function Home() {
   return (
     <div className="news-festival-container">
@@ -16,10 +16,12 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="flex-1">Contador</div>
+          <div className="flex-1">LUGAR PARA COLOCAR O CONTADORs</div>
         </div>
-        <section className="mystery-box">
-          <div className="row">
+      </div>
+      <section className="mystery-box pt-4 pb-6">
+        <div className="container">
+          <div className="flex">
             <div className="flex-1">
               <div>
                 <h1>Sua aprovação pode estar nesta caixa!</h1>
@@ -31,16 +33,23 @@ export default function Home() {
               <div>
                 <span>ALERTA DE SPOILER</span>
                 <ul>
-                  <li>4 anos de acesso ao novo plano a partir de 25/11</li>
-                  <li>Acesso imediato ao Premium Plus</li>
+                  <li>
+                    <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
+                    <span className="ml-2">4 anos de acesso ao novo plano a partir de 25/11</span>
+                  </li>
+                  <li>
+                    <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
+                    <span className="ml-2">Acesso imediato ao Premium Plus</span>
+                  </li>
                 </ul>
               </div>
               <div className="d-flex">
                 <div>
-                  <h3>De: 5.895,23</h3>
-                  <h3>Por:</h3>
-                  <h3>12x R$29,90</h3>
-                  <h4>ou R$ 299,00 à vista</h4>
+                  <span>De: 5.895,23</span>
+                  <span>Por:</span>
+                  <span>12x R$</span>
+                  <span className="text-6xl font-extrabold">29,90</span>
+                  <span>ou R$ 299,00 à vista</span>
                 </div>
                 <div>
                   <svg
@@ -134,19 +143,17 @@ export default function Home() {
                   </svg>
                 </div>
               </div>
-              <div>
-                <span>CSS Gradient Shine</span>
-              </div>
-
               <button>QUERO ABRIR MINHA CAIXA MISTERIOSA</button>
             </div>
             <div className="flex-1">
               <div>
-                <img src="" alt="Caixa" />
+                <Image src="/images/mystery_box.png" width={594} height={476} alt="Caixa" />
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
+      <div className="container">
         <div>
           <h1>Outros planos com descontos imperdíveis</h1>
           <p className="">Ofertas exclusivas para o 1º lote</p>
@@ -155,15 +162,21 @@ export default function Home() {
           <div className="flex-1">
             <div>
               <div>
-                <h1>Premium Anual</h1>
-                <p className="">Para você que quer praticar, mas precisa de um direcionamento</p>
+                <h1 className="text-yellow-500 font-medium text-3xl text-center">Premium Anual</h1>
+                <p className="text-center">
+                  Para você que quer praticar, mas precisa de um direcionamento
+                </p>
               </div>
-              <div className="flex">
-                <div>
-                  <h3>De: 5.895,23</h3>
-                  <h3>Por:</h3>
-                  <h3>12x R$29,90</h3>
-                  <h4>ou R$ 299,00 à vista</h4>
+              <div>
+                <div className="flex flex-col">
+                  <div className="flex">
+                    <div className="flex flex-col">
+                      <span>12x</span>
+                      <span>R$</span>
+                    </div>
+                    <span className="text-6xl font-extrabold">&nbsp;13,20</span>
+                  </div>
+                  <span>ou à vista 132,00</span>
                 </div>
                 <div>
                   <svg
@@ -263,15 +276,42 @@ export default function Home() {
           <div className="flex-1">
             <div>
               <ul>
-                <li>Criação de cadernos com questões </li>
-                <li>Resolução de questões</li>
-                <li>Resolução de questões</li>
-                <li>Gabaritos comentados por professores</li>
-                <li>Comentários em questões</li>
-                <li>Estatísticas de desempenho</li>
-                <li>Mais de 8.000 videoaulas</li>
-                <li>Todos os Raio-X e Guias de Estudo</li>
-                <li>1 Ano de Acesso</li>
+                <li>
+                  <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
+                  <span className="ml-2">Criação de cadernos com questões</span>
+                </li>
+                <li>
+                  <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
+                  <span className="ml-2">Resolu</span>ção de questões
+                </li>
+                <li>
+                  <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
+                  <span className="ml-2">Resolu</span>ção de questões
+                </li>
+                <li>
+                  <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
+                  <span className="ml-2">Gabari</span>tos comentados por professores
+                </li>
+                <li>
+                  <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
+                  <span className="ml-2">Coment</span>ários em questões
+                </li>
+                <li>
+                  <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
+                  <span className="ml-2">Estatí</span>sticas de desempenho
+                </li>
+                <li>
+                  <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
+                  <span className="ml-2">Mais d</span>e 8.000 videoaulas
+                </li>
+                <li>
+                  <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
+                  <span className="ml-2">Todos</span>os Raio-X e Guias de Estudo
+                </li>
+                <li>
+                  <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
+                  <span className="ml-2">1 Ano de Acesso</span>
+                </li>
               </ul>
             </div>
           </div>
@@ -284,6 +324,14 @@ export default function Home() {
           </p>
         </div>
       </div>
+      <footer>
+        <div className="container">
+          <h3>
+            Divulgue com seus amigos e não deixe eles perderem o MAIOR desconto da história do
+            Qconcursos
+          </h3>
+        </div>
+      </footer>
     </div>
   )
 }

@@ -21,6 +21,18 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+ul {
+  list-style-type: none;
+  text-align: start;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  padding-top: 0.5rem/* 8px */;
+  padding-bottom: 0.5rem/* 8px */;
+}
+
 .mystery-box {
   background: linear-gradient(0deg, $gray-700, $gray-700);
 }
@@ -28,7 +40,7 @@ body {
 .container {
   width: 100%;
   max-width: 780px;
-  margin: 4rem auto 0;
+  margin: 0rem auto 0;
 }
 
 .flex {
@@ -39,22 +51,44 @@ body {
   font-weight: 700;
 }
 
+.text-3xl {
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+}
+
 .text-4xl {
   font-size: 2.25rem/* 36px */;
   line-height: 2.5rem/* 40px */;
+}
+
+.text-6xl {
+  font-size: 3.75rem; /* 60px */
+  line-height: 1;
 }
 
 .font-medium {
   font-weight: 500;
 }
 
+.font-extrabold {
+  font-weight: 800;
+}
+
 .text-base {
   font-size: 1rem/* 16px */;
-  line-height: 1.5rem/* 24px */;
+  line-height: 1.188rem/* 24px */;
 }
 
 .text-gray-400 {
   color: $gray-400;
+}
+
+.text-yellow-500 {
+  color: $yellow-500;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .rainbow-border {
@@ -99,20 +133,27 @@ body {
   padding-bottom: 2.25rem/* 36px */;
 }
 
+.mr-2 {
+  margin-right: 0.5rem/* 8px */;
+}
+
+.ml-2 {
+  margin-left: 0.5rem/* 8px */;
+}
+
 button {
   position: relative;
-  background: #000;
+  background: linear-gradient(90.76deg, #FF1B72 24.08%, #FF7AAD 77.94%, #FF1A71 96.63%);
+  border-radius: 85px;
   border: 0;
-  padding: 14px 42px;
-  border-radius: 3px;
+  padding: 15px 53px;
   cursor: pointer;
   overflow: hidden;
   outline: none;
-  font-weight: 400;
-  font-size: 12px;
+  font-weight: 700;
+  font-size: 16px;
   color: #fff;
-  letter-spacing: .2em;
-  box-shadow: 0 8px 32px rgba(#000,.2);
+  line-height: 22px;
   transition: all .2s ease;
   &:after {
     content: '';
@@ -124,8 +165,14 @@ button {
     transform: skewX(-20deg);
     background-image: linear-gradient(to right,transparent,rgba(#fff,.3),transparent);
   }
-  &:hover:after {
-    animation: shine 1.6s ease;
+  &:after {
+    animation: shine 4s ease;
+  }
+  &:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
   }
   &:active {
     transform: translateY(1px);
