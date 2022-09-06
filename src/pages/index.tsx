@@ -1,25 +1,24 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
-// import 'bootstrap/dist/css/bootstrap.css'
 import Image from 'next/image'
 export default function Home() {
   return (
     <div className="news-festival-container">
-      <div className="container">
-        <div className="md:flex">
-          <div className="flex-1">
-            <div>
-              <h1 className="font-bold text-4xl rainbow-border xs:text-center">
-                Festival de Novidades
-              </h1>
-              <p className="font-medium text-base pt-4 pb-6 xs:text-center">
-                Chegou a maior inovação da nossa história no preparo para carreiras públicas. Pode
-                acreditar!
-              </p>
-            </div>
-          </div>
-          <div className="flex-1">LUGAR PARA COLOCAR O CONTADORs</div>
+      <div className="container mx-auto px-9">
+        <div>
+          <h1 className="font-bold text-4xl rainbow-border text-center pb-1">
+            Festival de Novidades
+          </h1>
+          <h2 className="font-medium text-2xl text-center py-4">
+            O seu preparo para concursos está prestes a mudar!
+          </h2>
         </div>
+      </div>
+      <div className="pb-9">
+        <h3 className="font-medium text-base text-center">
+          Você não precisa saber o que tem dentro da Caixa para entender que essa oportunidade é
+          única. Aproveite!
+        </h3>
       </div>
       <section className="mystery-box pt-4 pb-6">
         <div className="container">
@@ -51,11 +50,6 @@ export default function Home() {
               </div>
               <div>
                 <div>
-                  <span>De:&nbsp;</span>
-                  <Image src="/images/price.svg" width={94} height={21} alt="Price" />
-                  <br />
-                  <span>Por:</span>
-                  <br />
                   <div className="flex flex items-end">
                     <div className="flex flex-col">
                       <span>12x</span>

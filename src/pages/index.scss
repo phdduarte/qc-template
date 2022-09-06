@@ -103,6 +103,11 @@ footer {
   margin: 0rem auto 0;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .flex {
   display: flex;
 }
@@ -127,6 +132,8 @@ footer {
   align-items: flex-end;
 }
 
+// Justify Content
+
 .justify-items-end{
   justify-items: end;
 }
@@ -135,14 +142,26 @@ footer {
   font-weight: 700;
 }
 
+// Font Size
+
 .text-xs {
   font-size: 0.75rem; /* 12px */
   line-height: 1rem; /* 16px */
 }
 
+.text-base {
+  font-size: 1rem/* 16px */;
+  line-height: 1.188rem/* 24px */;
+}
+
 .text-lg {
   font-size: 1.125rem; /* 18px */
   line-height: 1.75rem; /* 28px */
+}
+
+.text-2xl {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
 }
 
 .text-3xl {
@@ -161,11 +180,6 @@ footer {
 
 .font-extrabold {
   font-weight: 800;
-}
-
-.text-base {
-  font-size: 1rem/* 16px */;
-  line-height: 1.188rem/* 24px */;
 }
 
 .text-gray-400 {
@@ -198,8 +212,45 @@ footer {
   border-bottom-left-radius: 16px;
 }
 
+// Padding
+
+.pb-1 {
+  padding-bottom: 0.25rem; /* 4px */
+}
+
+.mr-2 {
+  margin-right: 0.5rem/* 8px */;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem/* 8px */;
+}
+
+.ml-2 {
+  margin-left: 0.5rem/* 8px */;
+}
+
 .pt-4 {
   padding-top: 1rem/* 16px */;
+}
+
+.px-4 {
+  padding-left: 1rem; /* 16px */
+  padding-right: 1rem; /* 16px */
+}
+
+.mt-4	{
+  margin-top: 1rem; /* 16px */
+}
+
+.py-4 {
+  padding-top: 1rem; /* 16px */
+  padding-bottom: 1rem; /* 16px */
+}
+
+.py-5 {
+  padding-top: 1.25rem; /* 20px */
+  padding-bottom: 1.25rem; /* 20px */
 }
 
 .pt-6 {
@@ -208,6 +259,14 @@ footer {
 
 .pb-6 {
   padding-bottom: 1.5rem/* 24px */;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem/* 24px */;
+}
+
+.mt-6 {
+  margin-top: 1.5rem/* 24px */;
 }
 
 .px-9 {
@@ -225,30 +284,6 @@ footer {
 
 .pb-16 {
   padding-bottom: 4rem; /* 64px */
-}
-
-.mt-4	{
-  margin-top: 1rem; /* 16px */
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem/* 24px */;
-}
-
-.mt-6 {
-  margin-top: 1.5rem/* 24px */;
-}
-
-.mr-2 {
-  margin-right: 0.5rem/* 8px */;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem/* 8px */;
-}
-
-.ml-2 {
-  margin-left: 0.5rem/* 8px */;
 }
 
 button {
@@ -294,4 +329,10 @@ button {
   100% {
     left: 200%;
   }
+}
+
+// Max-Width
+
+.max-w-xl {
+  max-width: 36rem; /* 576px */
 }
