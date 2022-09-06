@@ -6,7 +6,7 @@ export default function Home() {
     <div className="news-festival-container">
       <div className="container mx-auto px-9">
         <div>
-          <h1 className="font-bold text-4xl rainbow-border text-center pb-1">
+          <h1 className="font-bold text-4xl rainbow-border-bottom text-center pb-1">
             Festival de Novidades
           </h1>
           <h2 className="font-medium text-2xl text-center py-4">
@@ -21,60 +21,124 @@ export default function Home() {
         </h3>
       </div>
       <div className="container">
-        <div className="price-wrapper rounded-2xl text-center">
-          <div className="price-wrapper-top rounded-t-2xl">
-            <div className="px-9 pt-4">
-              <div>
-                <h1 className="text-blue-500 font-medium text-3xl">Caixa Misteriosa</h1>
-                <p className="pt-3">
-                  Dentro da Caixa tem mais de{' '}
-                  <span className="text-yellow-500 font-bold">R$ 5.000</span> em itens
-                </p>
-              </div>
-              <div className="pt-4">
-                <div className="flex flex-col">
-                  <div className="flex">
-                    <div className="flex flex-col items-end">
-                      <span>12x</span>
-                      <span>R$</span>
-                    </div>
-                    <span className="text-6xl font-extrabold">&nbsp;29,90</span>
+        <div className="flex gap-x-6">
+          <div className="flex-1 w-86 max-w-sm">
+            <div className="price-wrapper rounded-2xl text-center">
+              <div className="price-wrapper-top rounded-t-2xl">
+                <div className="px-9 pt-4">
+                  <div>
+                    <h1 className="text-blue-500 font-medium text-2xl">Caixa Misteriosa</h1>
+                    <p className="pt-3 text-sm px-8">
+                      Dentro da Caixa tem mais de{' '}
+                      <span className="text-yellow-500 font-bold">R$ 5.000</span> em itens
+                    </p>
+                  </div>
+                  <div className="pt-4">
                     <div className="flex flex-col">
-                      <Image
-                        src="/images/discount_stamp_25.svg"
-                        width={56}
-                        height={40}
-                        alt="Icon Check"
-                      />
+                      <div className="flex">
+                        <div className="flex flex-col items-end">
+                          <span>12x</span>
+                          <span>R$</span>
+                        </div>
+                        <span className="text-6xl font-extrabold">&nbsp;29,90</span>
+                        <div className="flex flex-col">
+                          <Image
+                            src="/images/discount_stamp_25.svg"
+                            width={56}
+                            height={40}
+                            alt="Icon Check"
+                          />
+                        </div>
+                      </div>
+                      <span className="pt-3 text-xs text-gray-300">ou à vista 132,00</span>
                     </div>
                   </div>
-                  <span className="pt-3 text-xs text-gray-300">ou à vista 132,00</span>
+                </div>
+                <div className="pb-5 pt-3">
+                  <button>QUERO COMPRAR</button>
                 </div>
               </div>
-            </div>
-            <div className="pb-5 pt-3">
-              <button>QUERO COMPRAR</button>
+              <div className="pl-7 pt-3">
+                <ul>
+                  <li>
+                    <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
+                    <span className="ml-2">Criação de cadernos com questões</span>
+                  </li>
+                  <li>
+                    <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
+                    <span className="ml-2">Resolução de questões</span>
+                  </li>
+                  <li>
+                    <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
+                    <span className="ml-2">Criação e resolução de simulados</span>
+                  </li>
+                  <li>
+                    <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
+                    <span className="ml-2">5 Ano de Acesso</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div className="pl-7 pt-3">
-            <ul>
-              <li>
-                <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
-                <span className="ml-2">Criação de cadernos com questões</span>
-              </li>
-              <li>
-                <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
-                <span className="ml-2">Resolução de questões</span>
-              </li>
-              <li>
-                <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
-                <span className="ml-2">Criação e resolução de simulados</span>
-              </li>
-              <li>
-                <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
-                <span className="ml-2">5 Ano de Acesso</span>
-              </li>
-            </ul>
+          <div className="flex-1 w-86 max-w-sm">
+            <div className="price-wrapper rounded-2xl text-center rainbow-border">
+              <div className="price-wrapper-top rounded-t-2xl">
+                <div className="px-9 pt-4">
+                  <div>
+                    <h1 className="text-blue-500 font-medium text-2xl">
+                      <strong>Super </strong>Caixa Misteriosa
+                    </h1>
+                    <p className="pt-3 text-sm px-8">
+                      Dentro da Caixa tem mais de{' '}
+                      <span className="text-yellow-500 font-bold">R$ 10.000</span> em itens
+                    </p>
+                  </div>
+                  <div className="pt-4">
+                    <div className="flex flex-col">
+                      <div className="flex">
+                        <div className="flex flex-col items-end">
+                          <span>12x</span>
+                          <span>R$</span>
+                        </div>
+                        <span className="text-6xl font-extrabold">&nbsp;99,90</span>
+                        <div className="flex flex-col">
+                          <Image
+                            src="/images/discount_stamp_25.svg"
+                            width={56}
+                            height={40}
+                            alt="Icon Check"
+                          />
+                        </div>
+                      </div>
+                      <span className="pt-3 text-xs text-gray-300">ou à vista 132,00</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="pb-5 pt-3">
+                  <button>QUERO COMPRAR</button>
+                </div>
+              </div>
+              <div className="pl-7 pt-3">
+                <ul>
+                  <li>
+                    <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
+                    <span className="ml-2">Criação de cadernos com questões</span>
+                  </li>
+                  <li>
+                    <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
+                    <span className="ml-2">Resolução de questões</span>
+                  </li>
+                  <li>
+                    <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
+                    <span className="ml-2">Criação e resolução de simulados</span>
+                  </li>
+                  <li>
+                    <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
+                    <span className="ml-2">5 Ano de Acesso</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         <div>

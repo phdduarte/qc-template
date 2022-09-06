@@ -148,6 +148,11 @@ footer {
   line-height: 1rem; /* 16px */
 }
 
+.text-sm {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
 .text-base {
   font-size: 1rem/* 16px */;
   line-height: 1.188rem/* 24px */;
@@ -210,6 +215,13 @@ footer {
 }
 
 .rainbow-border {
+  border: 1.14px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(-270deg, #FF5294 6.73%, #EB78EB 26.14%, #00DFFF 56.86%, $yellow-500 74.49%, #FF837B 103.43%);
+  border-radius: 1rem;
+}
+
+.rainbow-border-bottom {
   border-bottom: 2.14px solid;
   border-image-slice: 1;
   border-width: 2.14px;
@@ -218,8 +230,6 @@ footer {
 
 .price-wrapper {
   box-shadow: 0px 6.34218px 11.6273px rgba(0, 0, 0, 0.25);
-  width: 21.43rem;
-  max-width: 21.43rem;
   height: 28.9rem;
   max-height: 28.9rem;
 }
@@ -302,6 +312,11 @@ footer {
   padding-left: 1.75rem; /* 28px */
 }
 
+.px-8{
+  padding-left: 2rem; /* 32px */
+  padding-right: 2rem; /* 32px */
+}
+
 .px-9 {
   padding-left: 2.25rem/* 36px */;
   padding-right: 2.25rem/* 36px */;
@@ -379,4 +394,18 @@ button {
 .rounded-t-2xl {
   border-top-left-radius: 1rem; /* 16px */
   border-top-right-radius: 1rem; /* 16px */
+}
+
+// Widht
+
+.w-86 {
+  width: 21.43rem; /* 343px */
+}
+
+.max-w-sm {
+  max-width: 21.43rem; /* 384px */
+}
+
+.gap-x-6{
+  column-gap: 1.5rem; /* 24px */
 }
