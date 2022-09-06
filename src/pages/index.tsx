@@ -50,7 +50,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex-1 w-86 max-w-sm">
-            <div className="price-wrapper rounded-2xl text-center">
+            <div className="price-wrapper rounded-2xl text-center h-101 max-h-101">
               <div className="price-wrapper-top rounded-t-2xl">
                 <div className="px-9 pt-4">
                   <div>
@@ -108,7 +108,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex-1 w-86 max-w-sm">
-            <div className="price-wrapper rounded-2xl text-center rainbow-border">
+            <div className="price-wrapper rounded-2xl text-center rainbow-border  h-101 max-h-101">
               <div className="price-wrapper-top rounded-t-2xl">
                 <div className="px-7 pt-4">
                   <div>
@@ -176,7 +176,7 @@ export default function Home() {
           <div className="container">
             <div className="flex gap-x-6">
               <div className="flex-1 w-86 max-w-sm">
-                <div className="price-wrapper rounded-2xl text-center">
+                <div className="price-wrapper h-102 max-h-102 rounded-2xl text-center">
                   <div className="price-wrapper-top rounded-t-2xl">
                     <div className="px-9 pt-4">
                       <div>
@@ -208,7 +208,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="pb-5 pt-3">
-                      <button>QUERO COMPRAR</button>
+                      <button className="bg-yellow-500">QUERO ASSINAR</button>
                     </div>
                   </div>
                   <div className="pl-7 pt-3">
@@ -227,14 +227,22 @@ export default function Home() {
                       </li>
                       <li>
                         <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
-                        <span className="ml-2">5 Ano de Acesso</span>
+                        <span className="ml-2">Gabaritos comentados por professores</span>
+                      </li>
+                      <li>
+                        <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
+                        <span className="ml-2">Comentários em questões</span>
+                      </li>
+                      <li>
+                        <Image src="/images/check.svg" width={14} height={14} alt="Icon Check" />
+                        <span className="ml-2">1 Ano de Acesso</span>
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
               <div className="flex-1 w-86 max-w-sm">
-                <div className="price-wrapper rounded-2xl text-center">
+                <div className="price-wrapper rounded-2xl text-center h-102 max-h-102">
                   <div className="price-wrapper-top rounded-t-2xl">
                     <div className="px-7 pt-4">
                       <div>
