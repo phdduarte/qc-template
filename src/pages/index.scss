@@ -2,11 +2,13 @@
 
 $pink-500: #ec4899;
 $gray-200: #EDF8FF;
+$gray-300: #A3A8AD;
 $gray-400: #999FA5;
 $gray-500: #272B31;
 $gray-700: #131313;
 $gray-800: #101010;
 $yellow-500: #FFC63B;
+$blue-500: #00DFFF;
 
 * {
   margin: 0;
@@ -138,9 +140,6 @@ footer {
   justify-items: end;
 }
 
-.font-bold {
-  font-weight: 700;
-}
 
 // Font Size
 
@@ -174,12 +173,24 @@ footer {
   line-height: 1;
 }
 
+// Font Weight
+
 .font-medium {
   font-weight: 500;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .font-extrabold {
   font-weight: 800;
+}
+
+// Text Color
+
+.text-gray-300 {
+  color: $gray-300;
 }
 
 .text-gray-400 {
@@ -188,6 +199,10 @@ footer {
 
 .text-yellow-500 {
   color: $yellow-500;
+}
+
+.text-blue-500 {
+  color: $blue-500;
 }
 
 .text-center {
@@ -202,14 +217,15 @@ footer {
 }
 
 .price-wrapper {
-  border-radius: 16px;
   box-shadow: 0px 6.34218px 11.6273px rgba(0, 0, 0, 0.25);
+  width: 21.43rem;
+  max-width: 21.43rem;
+  height: 28.9rem;
+  max-height: 28.9rem;
 }
 
-.price-wrapper-left {
+.price-wrapper-top {
   background: linear-gradient(118.93deg, #383B42 27.69%, rgba(56, 59, 66, 0.27) 95.01%);
-  border-top-left-radius: 16px;
-  border-bottom-left-radius: 16px;
 }
 
 // Padding
@@ -228,6 +244,10 @@ footer {
 
 .ml-2 {
   margin-left: 0.5rem/* 8px */;
+}
+
+.pt-3{
+  padding-top: 0.75rem; /* 12px */
 }
 
 .pt-4 {
@@ -253,6 +273,10 @@ footer {
   padding-bottom: 1.25rem; /* 20px */
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem; /* 20px */
+}
+
 .pt-6 {
   padding-top: 1.5rem/* 24px */;
 }
@@ -267,6 +291,15 @@ footer {
 
 .mt-6 {
   margin-top: 1.5rem/* 24px */;
+}
+
+.px-7{
+  padding-left: 1.75rem; /* 28px */
+  padding-right: 1.75rem; /* 28px */
+}
+
+.pl-7 {
+  padding-left: 1.75rem; /* 28px */
 }
 
 .px-9 {
@@ -291,14 +324,14 @@ button {
   background: linear-gradient(90.76deg, #FF1B72 24.08%, #FF7AAD 77.94%, #FF1A71 96.63%);
   border-radius: 85px;
   border: 0;
-  padding: 15px 53px;
+  padding: 12px 62px;
   cursor: pointer;
   overflow: hidden;
   outline: none;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15.53px;
   color: #fff;
-  line-height: 22px;
+  line-height: 20.61px;
   transition: all .2s ease;
   &:after {
     content: '';
@@ -335,4 +368,15 @@ button {
 
 .max-w-xl {
   max-width: 36rem; /* 576px */
+}
+
+// Border Radius
+
+.rounded-2xl{
+  border-radius: 1rem; /* 16px */
+}
+
+.rounded-t-2xl {
+  border-top-left-radius: 1rem; /* 16px */
+  border-top-right-radius: 1rem; /* 16px */
 }
